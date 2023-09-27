@@ -1,20 +1,17 @@
-'''
+#'''
 ##### Task 1 Percent Error
-Ask the user to input the following:
-* the expected number
-* the actual result
-Calculate the percent difference between the two results. Round your answer to 2 decimal places
+#Ask the user to input the following:
+#* the expected number
+#* the actual result
+#Calculate the percent difference between the two results. Round your answer to 2 decimal places
 
-```
-https://www.skillsyouneed.com/num/percent-change.html
+#```
+#https://www.skillsyouneed.com/num/percent-change.html
 
-Sample Output:
-Enter expected: 10
-Enter actual : 9
-The percent difference is -10.0%
-
-Enter expected: 12
-Enter actual : 14
-The percent difference is 16.67%
-```
-'''
+ExpNum = float(input("Enter the expected number -->"))
+print(ExpNum)
+ActNum = float(input("Enter the actual result -->"))
+Increase = (ActNum - ExpNum)
+PercentDif = Increase / ExpNum * 100
+PercentDif = round(PercentDif,2)
+print(f"{PercentDif}%")
